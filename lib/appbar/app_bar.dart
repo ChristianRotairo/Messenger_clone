@@ -1,5 +1,7 @@
+import 'package:clone_mess/search_bar/searchbar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart'; // Import the google_fonts package
+
 
 class App extends StatefulWidget {
   const App({Key? key});
@@ -28,7 +30,6 @@ class _AppState extends State<App> {
             margin: const EdgeInsets.only(right: 10),
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Color.fromARGB(255, 252, 10, 10),
             ),
           ),
           IconButton(
@@ -38,6 +39,8 @@ class _AppState extends State<App> {
           ),
         ],
       ),
+      body: SearchApp(),
+      backgroundColor: Colors.black12, // Place the SearchBar widget here
     );
   }
 }
