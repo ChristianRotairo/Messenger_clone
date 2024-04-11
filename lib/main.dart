@@ -1,7 +1,6 @@
-
+import 'package:clone_mess/mess_clone/view/get_data_view.dart';
 import 'package:flutter/material.dart';
 
-import 'mess_clone/view/messenger_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 0, 0)),
         useMaterial3: true,
       ),
-      home:  YourWidget(),
+      home: const  YourWidget(),
     );
   }
 }
